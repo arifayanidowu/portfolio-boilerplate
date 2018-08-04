@@ -1,6 +1,9 @@
-@import "config/config";
-@import "base/base";
-@import "menu/menu";
-@import "mixin/mixin";
+@import "bootstrap/config";
+@import "bootstrap/base";
+@import "bootstrap/menu";
+@import "bootstrap/mixin";
+@import "bootstrap/about";
+@import "bootstrap/work";
+@import "bootstrap/buttons";
 
-@import "mobile/mobile";
+@import "bootstrap/mobile";
