@@ -1,0 +1,23 @@
+$primary-color: #444;
+
+$colors: (
+    white: #fff,
+    yellow: rgb(195, 221, 80)
+);
+
+@function color($key){
+    @return map-get($colors, $key);
+};
+
+body {
+    background-color: $primary-color;
+    font: {
+        family: "Montserrat";
+    }
+    h1{
+        font: {
+            weight: 300
+        }
+        color: color(white);
+    }
+};
