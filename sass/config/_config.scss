@@ -42,3 +42,11 @@ $colors: (
 @function color($key) {
   @return map-get($colors, $key);
 }
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

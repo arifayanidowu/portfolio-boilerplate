@@ -52,7 +52,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100vh; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -65,6 +65,40 @@ main {
     main#home h1 {
       overflow: hidden;
       margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #eece1a;
+    transform: rotate(90deg);
+    width: 250px;
+    height: 250px; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #515151;
+    padding: 0.5rem;
+    border-bottom: 3px solid #eece1a; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }
 
 .menu-btn {
   position: absolute;
@@ -187,7 +221,10 @@ main {
       height: 150px;
       border-radius: 50%;
       background-image: url("../img/stizzle.JPG");
-      background-size: cover; } }
+      background-size: cover; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
 
 @media (max-width: 500px) {
   main#home h1 {
