@@ -6,7 +6,13 @@
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
-  .bio-image {
+  div.bio-image {
+    background: {
+      image: url("../img/stizzle.JPG");
+      size: cover;
+      repeat: no-repeat;
+      position: center;
+    }
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
