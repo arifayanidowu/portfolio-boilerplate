@@ -229,6 +229,23 @@ main {
       .boxes div:hover span {
         color: #000; }
 
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
+
 @media (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
